@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "links": [
+      {
+        "name": "Entreprise1",
+        "to": "ent1"
+      },
+      {
+        "name": "Entreprise2",
+        "to": "ent2"
+      }
+    ]
+  },
+  "footer": {}
+}

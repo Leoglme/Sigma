@@ -1,0 +1,5 @@
+<VueSlickCarousel v-bind="settings">
+  <div v-for="n in slides">
+    <img class="image-slide" :src="`/slides/home-slide-${n}.jpg`" :alt="`home-slide-${n}`">
+  </div>
+</VueSlickCarousel>

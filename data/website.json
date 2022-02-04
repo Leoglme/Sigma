@@ -1,0 +1,35 @@
+{
+  "name": "Sigma",
+  "title": "Serveur GTA 5 RP Français BIDULE • Sigma RP",
+  "description": "Avec Asana, travaillez d’où vous voulez, quand vous le voulez. Maintenez la concentration de vos équipes à distance et de toute votre entreprise sur les objectifs, projets et tâches quotidiennes grâce à Asana.",
+  "category": "games",
+  "url": "https://sigma-rp.fr",
+  "author": "Dibodev",
+  "email": "contact@sigma-rp.fr",
+  "keywords": "site web de conception en ligne, logiciel de conception graphique, logiciel de conception en ligne gratuit, médias et modèles de designs gratuits, Canva",
+  "twitter": "@kodeva",
+  "colorPrimary": "#3b51d5",
+  "colorSecondary": "#2c3e50",
+  "thumbnail": "https://assets.asana.biz/m/4aecf2c7c66aa51b/original/asana-meta-coral-1x.png",
+  "lang": "fr",
+  "city": "rennes",
+  "country": "france",
+  "postal_code": "35000",
+  "languages": [
+    {
+      "lang": "fr",
+      "url": "https://www.sigma-rp.fr"
+    },
+    {
+      "lang": "en",
+      "url": "https://www.sigma-rp.fr/en/"
+    }
+  ],
+  "GA_ID": "UA-219402202-1",
+  "GTAG_ID": "UA-219402202-1",
+  "googleSearchConsoleId": "3RQreb-4IUTWQQFR8QmGieYGPseeYh7UM8Hk4jxW3Nc",
+  "callToAction": {
+    "text": "Démo gratuite",
+    "to": "/contact"
+  }
+}

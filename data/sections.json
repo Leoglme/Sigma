@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Automatisatdddon",
+    "slogan": "Visualisez et suivez chaque détail",
+    "content": "Suivez l’avancement de tous les projets de votre équipe en temps réel, repérez instantanément tout point de blocage et menez vos projets à bien, au même endroit.",
+    "aboutMoreLink": null,
+    "media": {
+      "type": "video",
+      "poster": "https://assets.asana.biz/m/1e3c6670fd216bca/original/OWR21_Web_Product_Animation_Dashboards_1156x771_FR.png",
+      "url": "https://assets.asana.biz/m/3023225bb3bc5f09/123A39CF-OWR21_Web_Product_Animation_Dashboards_1156x771_FR.mp4"
+    }
+  },
+  {
+    "title": "Automatisation",
+    "slogan": "Visualisez et suivez chaque détail",
+    "content": "Suivez l’avancement de tous les projets de votre équipe en temps réel, repérez instantanément tout point de blocage et menez vos projets à bien, au même endroit.",
+    "aboutMoreLink": {
+      "text": "En savoir plus sur les Rapports",
+      "url": "/reports"
+    },
+    "media": {
+      "type": "image",
+      "url": "https://assets.asana.biz/m/1e3c6670fd216bca/original/OWR21_Web_Product_Animation_Dashboards_1156x771_FR.png"
+    }
+  }
+]
