@@ -1,19 +1,26 @@
-<div>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <el-menu-item index="1">Centre de traitement</el-menu-item>
-    <el-submenu index="2">
-      <template slot="title">Lieu de travail</template>
-      <el-menu-item index="2-1">item un</el-menu-item>
-      <el-menu-item index="2-2">item deux</el-menu-item>
-      <el-menu-item index="2-3">item trois</el-menu-item>
-      <el-submenu index="2-4">
-        <template slot="title">item quatre</template>
-        <el-menu-item index="2-4-1">item un</el-menu-item>
-        <el-menu-item index="2-4-2">item deux</el-menu-item>
-        <el-menu-item index="2-4-3">item trois</el-menu-item>
-      </el-submenu>
-    </el-submenu>
-    <el-menu-item index="3" disabled>Infos</el-menu-item>
-    <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">Commandes</a></el-menu-item>
-  </el-menu>
-</div>
+<nav class="navWrapper">
+    <div id="menu" :class="{ active: isActive }">
+      <el-menu mode="horizontal" @select="handleSelect" :router="true" class="navbar_list">
+        <el-menu-item id="logo" index="/" :route="{ name: 'Root'}">
+          <Logo/>
+        </el-menu-item>
+        <el-menu-item index="/hello" :route="{ name: 'Hello' }">
+          Hello
+        </el-menu-item>
+        <el-menu-item index="/projects" :route="{ name: 'Projects' }">
+          Projects
+        </el-menu-item>
+        <el-menu-item index="/about" :route="{ name: 'About' }">
+          About
+        </el-menu-item>
+        <el-menu-item index="/contact" :route="{ name: 'Contact' }">
+          Contact
+        </el-menu-item>
+      </el-menu>
+    </div>
+    <div id="toggle" @click="select()">
+      <div class="span" id="top" :class="{ active: isActive }"></div>
+      <div class="span" id="middle" :class="{ active: isActive }"></div>
+      <div class="span" id="bottom" :class="{ active: isActive }"></div>
+    </div>
+</nav>

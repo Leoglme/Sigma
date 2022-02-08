@@ -1,0 +1,16 @@
+<section id="info">
+  <div class="basic_section--container">
+    <div class="text-container">
+      <h3>{{ characterSection.title }}</h3>
+      <p>
+        {{ characterSection.content }}
+      </p>
+    </div>
+    <div class="character_column">
+      <img v-for="(image, index) in characterSection.media"
+           :key="index"
+           :src="image.url"
+           :alt="`character-${index}`" :class="`character-${index}`">
+    </div>
+  </div>
+</section>

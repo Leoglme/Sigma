@@ -1,0 +1,19 @@
+:root {
+  --swiper-theme-color: var(--primary) !important;
+}
+
+.swiper {
+  overflow: unset;
+  width: 100%
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  --swiper-pagination-color: hsla(0, 0%, 100%, .85);
+  --swiper-pagination-bullet-inactive-color: hsla(0, 0%, 100%, .5);
+  --swiper-pagination-bullet-horizontal-gap: 0.35rem;
+  bottom: -2.5rem
+}
+
+.swiper-wrapper {
+  width: 100%
+}

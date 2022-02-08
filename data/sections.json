@@ -1,14 +1,63 @@
 [
   {
-    "title": "Automatisatdddon",
-    "slogan": "Visualisez et suivez chaque détail",
-    "content": "Suivez l’avancement de tous les projets de votre équipe en temps réel, repérez instantanément tout point de blocage et menez vos projets à bien, au même endroit.",
-    "aboutMoreLink": null,
-    "media": {
-      "type": "video",
-      "poster": "https://assets.asana.biz/m/1e3c6670fd216bca/original/OWR21_Web_Product_Animation_Dashboards_1156x771_FR.png",
-      "url": "https://assets.asana.biz/m/3023225bb3bc5f09/123A39CF-OWR21_Web_Product_Animation_Dashboards_1156x771_FR.mp4"
-    }
+    "id": "home-slide",
+    "slides": [
+      {
+        "title": "Title 1",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit lorem, volutpat sed tempus id, pellentesque vitae enim.",
+        "button": {
+          "text": "Découvrir",
+          "url": "/toto"
+        },
+        "media": {
+          "type": "image",
+          "url": "/slides/slide-1.jpg"
+        }
+      },
+      {
+        "title": "Title 2",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit lorem, volutpat sed tempus id, pellentesque vitae enim.",
+        "button": {
+          "text": "Découvrir",
+          "url": "/toto"
+        },
+        "media": {
+          "type": "image",
+          "url": "/slides/slide-2.jpg"
+        }
+      },
+      {
+        "title": "Title 3",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam velit lorem, volutpat sed tempus id, pellentesque vitae enim.",
+        "button": {
+          "text": "Découvrir",
+          "url": "/toto"
+        },
+        "media": {
+          "type": "image",
+          "url": "/slides/slide-3.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "id": "characters",
+    "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum molestie consequat. Ut eget nunc accumsan, egestas risus a, convallis tellus. Vestibulum sed ex eget lorem porta interdum eget quis enim. Praesent laoreet, mi quis maximus fermentum, sem mauris posuere risus, in sodales leo eros eget nulla. Nam rutrum fermentum ipsum, non consequat metus accumsan vel. Etiam tincidunt sodales aliquet. Duis semper varius purus, sed finibus nunc iaculis nec. Nam vulputate accumsan luctus. Curabitur posuere lorem at molestie interdum. Proin tempus, magna et varius aliquam, lacus nisl convallis tortor, non. ",
+    "media": [
+      {
+        "type": "image",
+        "url": "/slides/slide-1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "/slides/slide-1.jpg"
+      },
+      {
+        "type": "image",
+        "url": "/slides/slide-1.jpg"
+      }
+    ]
   },
   {
     "title": "Automatisation",

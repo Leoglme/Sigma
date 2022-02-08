@@ -1,5 +1,19 @@
-<VueSlickCarousel v-bind="settings">
-  <div v-for="n in slides">
-    <img class="image-slide" :src="`/slides/home-slide-${n}.jpg`" :alt="`home-slide-${n}`">
-  </div>
-</VueSlickCarousel>
+<swiper class="swiper" ref="mySwiper" :options="swiperOption">
+  <swiper-slide v-for="(slide, index) in homeSlides" :key="index">
+    <img :data-src="slide.media.url" class="swiper-lazy hide-text" :alt="slide.title + 'toto'">
+    <div class="content" data-swiper-parallax="-360">
+      <div class="content_container">
+        <h2 class="title" data-swiper-parallax="-100">{{ slide.title }}</h2>
+        <p class="subtitle" data-swiper-parallax="-240">{{ slide.content }}</p>
+        <button>{{ slide.button.text }}</button>
+      </div>
+    </div>
+
+
+    <div class="swiper-lazy-preloader"></div>
+  </swiper-slide>
+
+  <div class="swiper-pagination swiper-pagination-white" slot="pagination"></div>
+  <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+  <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+</swiper>
