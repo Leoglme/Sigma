@@ -1,0 +1,86 @@
+<!--<nav class="navWrapper">-->
+<!--    <div id="menu" :class="{ active: isActive }">-->
+<!--      <el-menu mode="horizontal" @select="handleSelect" :router="true" class="navbar_list">-->
+<!--        <el-menu-item id="logo" index="/" :route="{ name: 'Root'}">-->
+<!--          <Logo/>-->
+<!--        </el-menu-item>-->
+<!--        <el-menu-item index="/hello" :route="{ name: 'Hello' }">-->
+<!--          Hello-->
+<!--        </el-menu-item>-->
+<!--        <el-menu-item index="/projects" :route="{ name: 'Projects' }">-->
+<!--          Projects-->
+<!--        </el-menu-item>-->
+<!--        <el-menu-item index="/about" :route="{ name: 'About' }">-->
+<!--          About-->
+<!--        </el-menu-item>-->
+<!--        <el-menu-item index="/contact" :route="{ name: 'Contact' }">-->
+<!--          Contact-->
+<!--        </el-menu-item>-->
+<!--      </el-menu>-->
+<!--    </div>-->
+<!--    <div id="toggle" @click="select()">-->
+<!--      <div class="span" id="top" :class="{ active: isActive }"></div>-->
+<!--      <div class="span" id="middle" :class="{ active: isActive }"></div>-->
+<!--      <div class="span" id="bottom" :class="{ active: isActive }"></div>-->
+<!--    </div>-->
+<!--</nav>-->
+<div>
+  <nav class="navWrapper">
+    <el-menu mode="horizontal" :router="true" class="center" background-color="var(--nav-background)">
+      <el-menu-item id="logo" index="/" class="center">
+        <Logo/>
+      </el-menu-item>
+    </el-menu>
+  </nav>
+  <swiper class="swiper swiper-nav_drawer" :options="swiperOption" ref="swiperNav">
+    <swiper-slide class="menu">
+      <el-menu
+        background-color="var(--nav-background)"
+        default-active="2"
+        class="h100"
+        @open="handleOpen"
+        @close="handleClose">
+        <el-submenu index="1">
+          <template slot="title">
+            <i class="el-icon-location"></i>
+            <span>Navigateur Un</span>
+          </template>
+          <el-menu-item-group title="Group Un">
+            <el-menu-item index="1-1">item un</el-menu-item>
+            <el-menu-item index="1-2">item un</el-menu-item>
+          </el-menu-item-group>
+          <el-menu-item-group title="Group Deux">
+            <el-menu-item index="1-3">item trois</el-menu-item>
+          </el-menu-item-group>
+          <el-submenu index="1-4">
+            <template slot="title">item quatre</template>
+            <el-menu-item index="1-4-1">item un</el-menu-item>
+          </el-submenu>
+        </el-submenu>
+        <el-menu-item index="2">
+          <i class="el-icon-menu"></i>
+          <span>Navigateur Deux</span>
+        </el-menu-item>
+        <el-menu-item index="3" disabled>
+          <i class="el-icon-document"></i>
+          <span>Navigateur Trois</span>
+        </el-menu-item>
+        <el-menu-item index="4">
+          <i class="el-icon-setting"></i>
+          <span>Navigateur Quatre</span>
+        </el-menu-item>
+      </el-menu>
+    </swiper-slide>
+    <swiper-slide class="content">
+      <div
+        class="menu-button"
+        :class="{ 'opened': menuOpened }"
+        @click="toggleMenu($event)">
+        <div class="bar"/>
+        <div class="bar"/>
+        <div class="bar"/>
+      </div>
+    </swiper-slide>
+  </swiper>
+</div>
+

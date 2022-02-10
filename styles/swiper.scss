@@ -2,6 +2,14 @@
   --swiper-theme-color: var(--primary) !important;
 }
 
+.swiper-nav_drawer .swiper-wrapper {
+  transform: translate3d(-320px, 0, 0);
+
+  .menu-button {
+    z-index: 1200;
+  }
+}
+
 .swiper {
   overflow: unset;
   width: 100%
