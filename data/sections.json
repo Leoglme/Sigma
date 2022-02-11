@@ -47,15 +47,15 @@
     "media": [
       {
         "type": "image",
-        "url": "/slides/slide-1.jpg"
+        "url": "/images/character1.png"
       },
       {
         "type": "image",
-        "url": "/slides/slide-1.jpg"
+        "url": "/images/character2.jpg"
       },
       {
         "type": "image",
-        "url": "/slides/slide-1.jpg"
+        "url": "/images/character3.jpg"
       }
     ]
   },

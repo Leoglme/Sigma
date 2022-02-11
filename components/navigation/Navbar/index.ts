@@ -1,5 +1,5 @@
 import Logo from "~/components/common/Logo/index.vue";
-
+import navs from '@/data/navs.json';
 
 export default {
   name: "Navbar",
@@ -7,6 +7,7 @@ export default {
   data() {
     return {
       menuOpened: false,
+      links: navs.navbar.links,
       swiperOption: {
         initialSlide: 1,
         resistanceRatio: 0,
