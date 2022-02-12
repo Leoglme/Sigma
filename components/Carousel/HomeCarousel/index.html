@@ -1,7 +1,7 @@
 <swiper class="swiper" ref="mySwiper" :options="swiperOption">
   <swiper-slide v-for="(slide, index) in homeSlides" :key="index">
-    <img :data-src="slide.media.url" class="swiper-lazy hide-text" :alt="slide.title + 'toto'">
-    <div class="content" data-swiper-parallax="-360">
+    <nuxt-img :src="slide.media.url" format="webp" :data-src="slide.media.url" class="swiper-lazy hide-text" :alt="slide.title + index" preload/>
+    <div class="content" data-swiper-parallax="-360" v-if="!$fetchState.pending">
       <div class="content_container">
         <h2 class="title" data-swiper-parallax="-100">{{ slide.title }}</h2>
         <p class="subtitle" data-swiper-parallax="-240">{{ slide.content }}</p>

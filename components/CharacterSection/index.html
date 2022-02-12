@@ -8,10 +8,10 @@
       </ul>
     </div>
     <div class="character_column">
-      <img v-for="(image, index) in characterSection.media"
+      <nuxt-img v-for="(image, index) in characterSection.media"
            :key="index"
            :src="image.url"
-           :alt="`character-${index}`" :class="`character-${index}`">
+           :alt="`character-${index}`" :class="`character-${index}`" format="webp" />
     </div>
   </div>
 </section>

@@ -31,7 +31,7 @@
 
 .content {
   z-index: 1;
-  display: none;
+  display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -71,4 +71,9 @@
   & + .content {
     display: flex;
   }
+}
+
+
+.swiper-lazy-preloader {
+  z-index: -1;
 }

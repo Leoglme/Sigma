@@ -3,6 +3,8 @@ import sections from "@/data/sections.json"
 
 export default {
   name: "HomeCarousel",
+  async fetch(){},
+  fetchOnServer: false,
   data() {
     return {
       swiperOption: {
