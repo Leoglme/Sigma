@@ -25,3 +25,32 @@
 .swiper-wrapper {
   width: 100%
 }
+
+.swiper-pagination-white .swiper-pagination-bullet {
+  background: var(--border-color);
+  opacity: 1;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 5px;
+  max-width: 4rem;
+  outline: none;
+  padding: 0;
+  transition: background .3s;
+  width: 100%
+}
+
+@media (max-width: 767px) {
+  .swiper-pagination-white .swiper-pagination-bullet {
+    height: 2px;
+    width: 1.5rem
+  }
+}
+
+.swiper-pagination-white .swiper-pagination-bullet:not(:last-child) {
+  margin-right: var(--grid-gap-static-md)
+}
+
+.swiper-pagination-white .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #fff
+}

@@ -4,39 +4,6 @@ $navHeight: 60px;
   padding: 12px;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  border-radius: 3px;
-  transition: all 0.2s ease-in-out;
-  font-weight: 500;
-  font-size: 18px;
-  color: #ffffff;
-  font-family: var(--display-font-family);
-
-  &:hover {
-    background: transparent !important;
-    color: var(--primary) !important;
-    outline: none;
-    background: none;
-    border: 0;
-  }
-
-  &:active {
-    transform: scale(0.95);
-    outline: none;
-  }
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
-}
-
 .swiper {
   height: 100%;
   position: fixed;

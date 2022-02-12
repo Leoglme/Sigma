@@ -93,9 +93,9 @@ $primary: #A80400;
   --padding-top-bottom: var(--padding-sides);
   --padding-static: var(--padding-sides);
   --header-multiplier: var(--header-numerator,var(--root-font-size)) /var(--root-font-size);
-  font-weight: var(--font-weight-std,400);
-  letter-spacing: var(--letter-spacing-std,-.025em);
-  line-height: var(--line-height-std,1.6);
+  font-weight: var(--font-weight-std, 400);
+  letter-spacing: var(--letter-spacing-std, -.025em);
+  line-height: var(--line-height-std, 1.6);
 }
 
 @import "responsive";
@@ -154,6 +154,7 @@ button, .btn {
 .h100 {
   height: 100%;
 }
+
 .w100 {
   width: 100%;
 }
@@ -168,9 +169,54 @@ button, .btn {
   display: flex;
   flex-direction: column;
 }
+
 .hide-text {
   color: transparent;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.sub-item, .navbar .menu-item, .navbar .menu-item .el-submenu__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: var(--display-font-family);
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  &.menu_item--link:hover, &:hover .el-submenu__title {
+    color: var(--primary) !important;
+    outline: none;
+    background: none;
+    border: 0;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    outline: none;
+  }
+}
+
+.bullet-list {
+  list-style: inside;
+
+  li {
+    margin: var(--grid-gap-static-sm) 0;
+  }
 }

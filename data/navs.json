@@ -2,12 +2,40 @@
   "navbar": {
     "links": [
       {
-        "name": "Entreprise1",
-        "to": "ent1"
+        "role": "item",
+        "name": "Accueil",
+        "to": "/"
       },
       {
-        "name": "Entreprise2",
-        "to": "ent2"
+        "role": "menu",
+        "name": "Règlement",
+        "links": [
+          {
+            "role": "item",
+            "name": "Généralités",
+            "to": "/reglement/general"
+          },
+          {
+            "role": "item",
+            "name": "Légal",
+            "to": "/reglement/legal"
+          },
+          {
+            "role": "item",
+            "name": "Illégal",
+            "to": "/reglement/illegal"
+          }
+        ]
+      },
+      {
+        "role": "item",
+        "name": "Juridique",
+        "to": "/juridique"
+      },
+      {
+        "role": "item",
+        "name": "Touches",
+        "to": "/touches"
       }
     ]
   },
