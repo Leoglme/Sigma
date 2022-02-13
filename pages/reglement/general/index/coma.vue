@@ -1,15 +1,12 @@
 <template>
-   <div>
-     <h1 class="title">coma</h1>
-   </div>
+  <ReglementView name="coma"/>
 </template>
 
 <script lang="ts">
+import ReglementView from "~/components/ReglementView/index.vue";
+
 export default {
-  name: "coma"
+  name: "coma",
+  components: {ReglementView}
 }
 </script>
-
-<style scoped>
-
-</style>

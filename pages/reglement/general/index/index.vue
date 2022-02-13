@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <h1 class="title">GENRElm</h1>
-  </div>
+  <ReglementView :name="defaultTab"/>
 </template>
 
 <script lang="ts">
+import ReglementView from "~/components/ReglementView/index.vue";
+
 export default {
-  name: "index"
+  name: "index",
+  props: {
+    defaultTab: {type: String, default: ""}
+  },
+  components: {ReglementView}
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,6 +1,8 @@
 {
-  "description": "Vous retrouverez ci-dessous les différentes catégories qu'aborde ce règlement. Il est bien entendu amené à changer. Vous devez vous en tenir informés bien que nous vous ferons une annonce si c'est le cas. Vous devez connaître le règlement sur le bout des doigts mais n'hésitez pas à le relire si vous avez un doute ou avant de faire une scène..",
+  "name": "règlement",
+  "description": "Vous retrouverez ci-dessous les différentes catégories qu'aborde ce règlement. \n Il est bien entendu amené à changer. Vous devez vous en tenir informés bien que nous vous ferons une annonce si c'est le cas. \n Vous devez connaître le règlement sur le bout des doigts mais n'hésitez pas à le relire si vous avez un doute ou avant de faire une scène..",
   "general": {
+    "name": "règlement général",
     "description": "Les règles générales sont amenées à évoluer. Si un changement survint, il vous sera annoncé.\nCependant, tenez-vous au courant tout de même en regardant le règlement régulièrement et surtout si vous avez des doutes.",
     "rules": [
       {

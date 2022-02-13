@@ -1,13 +1,12 @@
 <template>
-  <h1 class="title">mort rp</h1>
+  <ReglementView name="mortrp"/>
 </template>
 
 <script lang="ts">
+import ReglementView from "~/components/ReglementView/index.vue";
+
 export default {
-  name: "mort-rp"
+  name: "mortrp",
+  components: {ReglementView}
 }
 </script>
-
-<style scoped>
-
-</style>

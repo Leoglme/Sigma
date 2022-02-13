@@ -1,15 +1,12 @@
 <template>
-    <div>
-      <h1 class="title">zones</h1>
-    </div>
+  <ReglementView name="zones"/>
 </template>
 
 <script lang="ts">
+import ReglementView from "~/components/ReglementView/index.vue";
+
 export default {
-  name: "zones"
+  name: "zones",
+  components: {ReglementView}
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,13 +1,17 @@
 import SkeletonTabs from "~/components/Skeleton/SkeletonTabs/index.vue";
+import reglement from "@/data/reglement.json"
+import replace from "~/mixins/replace";
 export default {
   async fetch(){},
   name: "ReglementGeneralPage",
+  mixins: [replace],
   components: {SkeletonTabs},
   data() {
     return {
       currentTabs: 'lexique',
       parentTabName: "general",
       defaultTab: "lexique",
+      reglement: reglement.general,
       loaded: false,
       tabs: [
         {
@@ -57,9 +61,8 @@ export default {
       const names = this.$route.name.split('-');
       return names[names.length - 1]
     },
-    title() {
-      if (this.currentTabs === "tags") return "Mots clés"
-      return this.capitalizeFirstLetter(this.currentTabs)
+    description(): string{
+      return this.breakReplace(this.reglement.description)
     }
   },
 }
