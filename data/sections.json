@@ -49,11 +49,8 @@
         "links": [
           {
             "pattern": "discord",
-            "url": "/discord"
-          },
-          {
-            "pattern": "Whitelist",
-            "url": "/Whitelist"
+            "target": "_blank",
+            "url": "https://discord.com/invite/eTtZEWCpmc"
           }
         ]
       },

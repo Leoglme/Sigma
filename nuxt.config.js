@@ -4,7 +4,7 @@ import website from './data/website.json';
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: meta,
-
+  target: 'static',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     'element-ui/lib/theme-chalk/index.css',
@@ -38,14 +38,14 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/google-analytics',
-    '@nuxtjs/google-gtag',
-    '@nuxt/typescript-build',
-    '@nuxt/image'
+    '@nuxtjs/google-gtag'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,6 +1,5 @@
 <template>
   <main style="max-width: 100vw; overflow-y: hidden">
-    <Navbar/>
     <HomeCarousel/>
     <CharacterSection/>
     <Captures/>
@@ -9,13 +8,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import Navbar from "~/components/navigation/Navbar";
-import Captures from "~/components/Captures";
-import HomeCarousel from "~/components/Carousel/HomeCarousel";
-import CharacterSection from "~/components/CharacterSection/index";
+import Captures from "~/components/Captures/index.vue";
+import HomeCarousel from "~/components/Carousel/HomeCarousel/index.vue";
+import CharacterSection from "~/components/CharacterSection/index.vue";
 
 export default Vue.extend({
   name: 'IndexPage',
-  components: {Navbar, HomeCarousel, Captures, CharacterSection}
+  components: {HomeCarousel, Captures, CharacterSection}
 })
 </script>

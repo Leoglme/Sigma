@@ -12,7 +12,12 @@
         "links": [
           {
             "role": "item",
-            "name": "Généralités",
+            "name": "Règlements",
+            "to": "/reglement"
+          },
+          {
+            "role": "item",
+            "name": "Général",
             "to": "/reglement/general"
           },
           {

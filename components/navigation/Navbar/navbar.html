@@ -7,7 +7,7 @@
       <el-menu-item class="menu-item menu_item--link" :key="index" :index="link.to" v-if="link.role === 'item'">
         {{ link.name }}
       </el-menu-item>
-      <el-submenu index="2" class="menu-item" v-if="link.role === 'menu'">
+      <el-submenu  class="menu-item" v-if="link.role === 'menu'" :index="link.to || link.name">
         <template slot="title">{{ link.name }}</template>
         <el-menu-item v-for="(subLink, subIndex) in link.links"
                       :key="subIndex" :index="subLink.to"
@@ -19,63 +19,3 @@
     </template>
   </el-menu>
 </nav>
-<!--<div>-->
-<!--  <nav class="navbar">-->
-<!--    <el-menu mode="horizontal" :router="true" class="center" background-color="var(&#45;&#45;nav-background)">-->
-<!--      <el-menu-item id="logo" index="/" class="center">-->
-<!--        <Logo/>-->
-<!--      </el-menu-item>-->
-<!--    </el-menu>-->
-<!--  </nav>-->
-<!--  <swiper class="swiper swiper-nav_drawer" :options="swiperOption" ref="swiperNav">-->
-<!--    <swiper-slide class="menu">-->
-<!--      <el-menu-->
-<!--        background-color="var(&#45;&#45;nav-background)"-->
-<!--        default-active="2"-->
-<!--        class="h100"-->
-<!--        @open="handleOpen"-->
-<!--        @close="handleClose">-->
-<!--        <el-submenu index="1">-->
-<!--          <template slot="title">-->
-<!--            <i class="el-icon-location"></i>-->
-<!--            <span>Navigateur Un</span>-->
-<!--          </template>-->
-<!--          <el-menu-item-group title="Group Un">-->
-<!--            <el-menu-item index="1-1">item un</el-menu-item>-->
-<!--            <el-menu-item index="1-2">item un</el-menu-item>-->
-<!--          </el-menu-item-group>-->
-<!--          <el-menu-item-group title="Group Deux">-->
-<!--            <el-menu-item index="1-3">item trois</el-menu-item>-->
-<!--          </el-menu-item-group>-->
-<!--          <el-submenu index="1-4">-->
-<!--            <template slot="title">item quatre</template>-->
-<!--            <el-menu-item index="1-4-1">item un</el-menu-item>-->
-<!--          </el-submenu>-->
-<!--        </el-submenu>-->
-<!--        <el-menu-item index="2">-->
-<!--          <i class="el-icon-menu"></i>-->
-<!--          <span>Navigateur Deux</span>-->
-<!--        </el-menu-item>-->
-<!--        <el-menu-item index="3" disabled>-->
-<!--          <i class="el-icon-document"></i>-->
-<!--          <span>Navigateur Trois</span>-->
-<!--        </el-menu-item>-->
-<!--        <el-menu-item index="4">-->
-<!--          <i class="el-icon-setting"></i>-->
-<!--          <span>Navigateur Quatre</span>-->
-<!--        </el-menu-item>-->
-<!--      </el-menu>-->
-<!--    </swiper-slide>-->
-<!--    <swiper-slide class="content">-->
-<!--      <div-->
-<!--        class="menu-button"-->
-<!--        :class="{ 'opened': menuOpened }"-->
-<!--        @click="toggleMenu($event)">-->
-<!--        <div class="bar"/>-->
-<!--        <div class="bar"/>-->
-<!--        <div class="bar"/>-->
-<!--      </div>-->
-<!--    </swiper-slide>-->
-<!--  </swiper>-->
-<!--</div>-->
-

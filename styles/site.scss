@@ -29,8 +29,10 @@ $primary: #A80400;
 :root {
   --primary: #A80400;
   --grey100: #e8e8e8;
+  --grey400: #999999;
   --body-color: #e8e8e8;
   --color-h: #fff;
+  --gradients: linear-gradient(90deg, #282828 25%, #323232 37%, #3b3b3b 63%);
   --background-color: #0b0b0b;
   --dark: #0b0b0b;
   --nav-background: #000;
@@ -125,11 +127,9 @@ section {
   padding: var(--section-padding)
 }
 
-button, .btn {
-  border: 2px solid #fff;
+button {
   color: #ffffff;
   cursor: pointer;
-  background: transparent;
   border-radius: 4px;
   font-family: var(--display-font-family);
   font-size: var(--font-size-3);
@@ -141,6 +141,25 @@ button, .btn {
   transition: all .3s ease;
   width: auto;
   z-index: 0;
+}
+
+.btn {
+  border: 2px solid darken($primary, 8%);
+  background: var(--primary);
+
+  &:hover {
+    background: darken($primary, 8%);
+    border-color: darken($primary, 12%);
+  }
+
+  &:active {
+    transform: scale(.95);
+  }
+}
+
+.btn-outlined {
+  border: 2px solid #fff;
+  background: transparent;
 
   &:hover {
     background: var(--primary);
@@ -152,8 +171,22 @@ button, .btn {
   }
 }
 
+.btn-sm {
+  font-size: var(--font-size-2);
+  line-height: 1rem;
+  padding: 0.5rem 1rem;
+}
+
 .h100 {
   height: 100%;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .w100 {
@@ -183,6 +216,10 @@ button, .btn {
   top: 0;
   width: 100%;
   z-index: 200;
+
+  .el-menu-item {
+    background: transparent !important;
+  }
 }
 
 .sub-item, .navbar .menu-item, .navbar .menu-item .el-submenu__title {
@@ -194,6 +231,7 @@ button, .btn {
   transition: all 0.2s ease-in-out;
   font-weight: 500;
   font-size: 18px;
+  border: 0 !important;
   color: #ffffff;
   font-family: var(--display-font-family);
 
@@ -208,6 +246,13 @@ button, .btn {
     border: 0;
   }
 
+  &:focus , &.is-active{
+    color: #ffffff !important;
+    & .el-submenu__title {
+      color: #ffffff !important;
+    }
+  }
+
   &:active {
     transform: scale(0.95);
     outline: none;
@@ -220,4 +265,73 @@ button, .btn {
   li {
     margin: var(--grid-gap-static-sm) 0;
   }
+}
+
+a.link {
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    border-bottom: 2px solid;
+  }
+}
+
+.el-menu--horizontal > .el-menu-item.is-active, .el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+  border-bottom: 0 !important;
+}
+
+.touche-card .el-card__header {
+  border-color: var(--border-color);
+}
+
+.el-tabs__nav-wrap::after {
+  background-color: var(--border-light-color);
+}
+
+
+.el-tabs__nav {
+  padding-bottom: var(--grid-gap-static-xs);
+  width: 100%;
+  display: flex;
+}
+
+.cap .el-tabs__item {
+  text-transform: capitalize;
+}
+
+.el-tabs__item {
+  user-select: none;
+  color: var(--grey100);
+  font-size: var(--font-size-2);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+  &.is-active {
+    color: var(--primary);
+  }
+}
+
+.el-tabs__active-bar {
+  background: var(--primary);
+  flex: 1;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #fff;
+  font-family: var(--header-font-family);
+  font-size: var(--font-size-4);
+  letter-spacing: 0;
+  line-height: var(--header-line-height);
+}
+.el-skeleton.is-animated .el-skeleton__item {
+  background: var(--gradients);
+  background-size: 400% 100%;
 }

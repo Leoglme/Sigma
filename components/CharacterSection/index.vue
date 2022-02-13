@@ -1,3 +1,3 @@
 <template src="./index.html"/>
-<script src="./index.ts"/>
+<script src="./script.ts"/>
 <style lang="scss" src="./style.scss" scoped/>
