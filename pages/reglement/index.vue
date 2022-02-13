@@ -20,7 +20,7 @@
   </section>
 </template>
 
-<script lang="ts" src="./script.ts"/>
+<script lang="ts" src="./index.ts"/>
 
 <style lang="scss" scoped>
 .buttons {

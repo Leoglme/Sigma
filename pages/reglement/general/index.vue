@@ -23,7 +23,7 @@ Cependant, tenez-vous au courant tout de même en regardant le règlement régul
   </section>
 </template>
 
-<script lang="ts" src="./script.ts"/>
+<script lang="ts" src="./index.ts"/>
 
 <style lang="scss" scoped>
 #reglements {
