@@ -2,7 +2,6 @@ import SkeletonTabs from "~/components/Skeleton/SkeletonTabs/index.vue";
 import reglement from "@/data/reglement.json"
 import replace from "~/mixins/replace";
 export default {
-  async fetch(){},
   name: "ReglementGeneralPage",
   mixins: [replace],
   components: {SkeletonTabs},
@@ -38,12 +37,10 @@ export default {
     };
   },
   beforeMount() {
-    const splitPath = this.$route.path.split('/');
+    const splitPath = this.$route.path.split('/').filter(e => e !== "");
     const name = splitPath[splitPath.length - 1];
 
-    this.currentTabs = name === this.parentTabName
-      ? this.defaultTab
-      : splitPath[splitPath.length - 1]
+    this.currentTabs = (name === this.parentTabName ? this.defaultTab : name)
     this.loaded = true;
   },
   watch: {
@@ -53,13 +50,9 @@ export default {
     }
   },
   computed: {
-    isAppend() {
-      const finds = [this.parentTabName, 'index'];
-      return finds.includes(this.routeName);
-    },
     routeName() {
-      const names = this.$route.name.split('-');
-      return names[names.length - 1]
+      const splitPath = this.$route.path.split('/').filter(e => e !== "");
+      return splitPath[splitPath.length - 1];
     },
     description(): string{
       return this.breakReplace(this.reglement.description)

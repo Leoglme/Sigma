@@ -2,14 +2,14 @@
   <section id="reglements-general">
     <h1 class="title">{{ reglement.name }}</h1>
     <span class="reglement-description" v-html="description"/>
-    <span v-if="$fetchState.pending || !loaded">
+    <span v-show="!loaded">
       <SkeletonTabs/>
     </span>
-    <el-tabs class="cap" v-model="currentTabs" v-if="!$fetchState.pending && loaded">
+    <el-tabs class="cap" v-model="currentTabs" v-show="loaded">
       <client-only v-for="(tab, index) in tabs" :key="index">
         <el-tab-pane  :lazy="true" :label="tab.name" :name="tab.to">
           <template #label>
-            <NuxtLink class="center w100" :append="isAppend" :to="tab.to || tab.name">
+            <NuxtLink class="center w100" :to="'/reglement/' + parentTabName + '/' + tab.to">
               {{tab.name}}
             </NuxtLink>
           </template>

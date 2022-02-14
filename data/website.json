@@ -1,16 +1,16 @@
 {
   "name": "Sigma",
   "title": "Serveur GTA 5 RP Français • Sigma RP",
-  "description": "Avec Asana, travaillez d’où vous voulez, quand vous le voulez. Maintenez la concentration de vos équipes à distance et de toute votre entreprise sur les objectifs, projets et tâches quotidiennes grâce à Asana.",
+  "description": "Sigma est un serveur français basé sur GTA 5 RP présent sur les serveurs dédiés de FiveM. Serveur whitelist, Scripts originaux, Mise à jour quotidienne.",
   "category": "games",
   "url": "https://sigma-rp.fr",
   "author": "Dibodev",
   "email": "contact@sigma-rp.fr",
-  "keywords": "site web de conception en ligne, logiciel de conception graphique, logiciel de conception en ligne gratuit, médias et modèles de designs gratuits, Canva",
-  "twitter": "@kodeva",
-  "colorPrimary": "#3b51d5",
-  "colorSecondary": "#2c3e50",
-  "thumbnail": "https://assets.asana.biz/m/4aecf2c7c66aa51b/original/asana-meta-coral-1x.png",
+  "keywords": "gta gtarp gta5 gtav fivem free access fr francais sigma sigmarp sigma-rp rp",
+  "twitter": "@dibodev",
+  "colorPrimary": "#A80400",
+  "colorSecondary": "#999999",
+  "thumbnail": "https://sigma-rp.fr/sigma-thumbnail.jpg",
   "lang": "fr",
   "city": "rennes",
   "country": "france",
@@ -25,7 +25,7 @@
       "url": "https://www.sigma-rp.fr"
     }
   ],
-  "GA_ID": "UA-219402202-1",
-  "GTAG_ID": "UA-219402202-1",
-  "googleSearchConsoleId": "3RQreb-4IUTWQQFR8QmGieYGPseeYh7UM8Hk4jxW3Nc"
+  "GA_ID": "UA-220236798-1",
+  "GTAG_ID": "GTM-T78J7HX",
+  "googleSearchConsoleId": "p2Rz8Gsn-PJ7Allcq30R9Hpt0VS2OUvnHIHC2w8l53A"
 }
