@@ -1,34 +1,15 @@
 <section id="touches">
-  <el-card class="touche-card" shadow="always">
+  <el-card v-for="(toucheCategory, index) in touches" :key="index" class="touche-card" shadow="always">
     <div slot="header" class="clearfix">
-      <h2 class="touches_category--title">Touches générales IG</h2>
+      <h2 class="touches_category--title">{{ toucheCategory.name }}</h2>
     </div>
 
     <div class="touches-list">
-      <div v-for="n in 10" class="touche-item">
-        Menu <span class="touche">f5</span>
-      </div>
-    </div>
-  </el-card>
-  <el-card class="touche-card" shadow="always">
-    <div slot="header" class="clearfix">
-      <h2 class="touches_category--title">Touches générales IG</h2>
-    </div>
-
-    <div class="touches-list">
-      <div v-for="n in 10" class="touche-item">
-        Menu <span class="touche">f5</span>
-      </div>
-    </div>
-  </el-card>
-  <el-card class="touche-card" shadow="always">
-    <div slot="header" class="clearfix">
-      <h2 class="touches_category--title">Touches générales IG</h2>
-    </div>
-
-    <div class="touches-list">
-      <div v-for="n in 10" class="touche-item">
-        Menu <span class="touche">f5</span>
+      <div v-for="(touche, i) in toucheCategory.touches" :key="i" class="touche-item">
+        {{ touche.label }}
+        <div class="game-keys">
+          <span v-for="(keyboardKey, keyIndex) in touche.keys" :key="keyIndex" class="touche">{{ keyboardKey }}</span>
+        </div>
       </div>
     </div>
   </el-card>

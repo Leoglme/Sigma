@@ -39,11 +39,21 @@ $touche_color: rgba(255, 255, 255, 0.7);
 }
 
 .touche {
-  padding: 5px 8px;
+  padding: 4px 7px;
   text-transform: capitalize;
   border-radius: 3px;
   font-size: var(--font-size-1);
+  min-width: 14px;
+  text-align: center;
   border: 1px solid $touche_color;
+}
+
+.game-keys {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .clearfix:before,
@@ -65,6 +75,9 @@ $touche_color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 850px) {
+  .touches-list {
+    max-height: unset;
+  }
   #touches {
     padding-top: var(--grid-gap-static-lg);
   }
@@ -85,9 +98,6 @@ $touche_color: rgba(255, 255, 255, 0.7);
 @media (max-width: 500px) {
   #touches {
     padding-top: var(--grid-gap-static-lg);
-  }
-  .touches-list {
-    max-height: unset;
   }
   .touche-item {
     max-width: unset;

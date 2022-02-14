@@ -2,7 +2,7 @@
 // https://media-rockstargames-com.akamaized.net/mfe2/sites-rockstargames/307f970/css/afedfaada238717b4db5.css
 
 
-$breakpoints: (sm: 768px, md: 1024px, lg: 1920px, xl: 2560px);
+$breakpoints: (xs: 400px, sm: 768px, md: 1024px, lg: 1920px, xl: 2560px);
 
 @media (min-width:0px) {
   :root {
@@ -43,5 +43,9 @@ $breakpoints: (sm: 768px, md: 1024px, lg: 1920px, xl: 2560px);
   :root {
     --section-padding: var(--grid-gap-static-md);
   }
-
+}
+@media (max-width: map-get($breakpoints, "xs")) {
+  :root {
+    --section-padding: var(--grid-gap-static-sm);
+  }
 }

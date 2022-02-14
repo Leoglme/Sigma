@@ -1,3 +1,9 @@
+import touches from "~/data/touches.json";
 export default {
-  name: "Touches"
+  name: "Touches",
+  data(){
+    return {
+      touches
+    }
+  }
 }
