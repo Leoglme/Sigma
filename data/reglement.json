@@ -195,6 +195,7 @@
     ]
   },
   "legal": {
+    "name": "règlement legal",
     "description": "Les règles concernant le monde du légal tel que les règles des civils, LSPD, BCSO, EMS et les entreprises sont amenées à évoluer. Si un changement survient, il vous sera annoncé.\nCependant, tenez-vous au courant tout de même en regardant le règlement régulièrement et surtout si vous avez des doutes.",
     "rules": [
       {
@@ -316,6 +317,7 @@
     ]
   },
   "illegal": {
+    "name": "règlement illegal",
     "description": "Les règles concernant le monde de l'illégal tel que les règles des criminels en général, Gang et Organisation.\nSi un changement survient, il vous sera annoncé.\nCependant, tenez-vous au courant tout de même en regardant le règlement régulièrement et surtout si vous avez des doutes.",
     "rules": [
       {

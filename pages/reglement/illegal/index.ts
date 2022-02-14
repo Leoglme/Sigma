@@ -3,36 +3,28 @@ import reglement from "@/data/reglement.json"
 import replace from "~/mixins/replace";
 import router from "~/mixins/router";
 export default {
-  name: "ReglementGeneralPage",
+  name: "ReglementLegalPage",
   mixins: [replace, router],
   components: {SkeletonTabs},
   data() {
     return {
-      currentTabs: 'lexique',
-      parentTabName: "general",
-      defaultTab: "lexique",
-      reglement: reglement.general,
+      currentTabs: 'criminel',
+      parentTabName: "illegal",
+      defaultTab: "criminel",
+      reglement: reglement.legal,
       loaded: false,
       tabs: [
         {
-          name: "lexique",
-          to: "lexique"
+          name: "criminel",
+          to: "criminel"
         },
         {
-          name: "zones",
-          to: "zones"
+          name: "gang",
+          to: "gang"
         },
         {
-          name: "interdictions",
-          to: "interdictions"
-        },
-        {
-          name: "mort rp",
-          to: "mort-rp"
-        },
-        {
-          name: "coma",
-          to: "coma"
+          name: "organisation",
+          to: "organisation"
         }
       ]
     };
