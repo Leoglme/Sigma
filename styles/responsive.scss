@@ -1,8 +1,8 @@
 $breakpoints: (xs: 400px, sm: 768px, md: 1024px, lg: 1920px, xl: 2560px);
 
-@media (min-width:0px) {
+@media (min-width: 0px) {
   :root {
-    --root-font-size:16px;
+    --root-font-size: 16px;
   }
 }
 
@@ -11,13 +11,13 @@ $breakpoints: (xs: 400px, sm: 768px, md: 1024px, lg: 1920px, xl: 2560px);
 @media (min-width: map-get($breakpoints, "sm")) {
   :root {
     --header-font-size: var(--font-size-5);
-    --root-font-size:18px;
+    --root-font-size: 18px;
   }
 }
 
 @media (min-width: map-get($breakpoints, "md")) {
   :root {
-    --root-font-size:20px;
+    --root-font-size: 20px;
   }
 }
 
@@ -39,9 +39,43 @@ $breakpoints: (xs: 400px, sm: 768px, md: 1024px, lg: 1920px, xl: 2560px);
   :root {
     --section-padding: var(--grid-gap-static-md);
   }
+  .navigation-drawer {
+    display: block !important;
+  }
+
+  .links-wrapper {
+    a {
+      max-width: 75vw;
+    }
+  }
+
+  .navbar .el-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .toggle {
+      display: flex;
+    }
+
+    & .menu-item {
+      display: none;
+
+      &#logo {
+        display: flex;
+        padding: 1rem;
+      }
+    }
+  }
 }
+
 @media (max-width: map-get($breakpoints, "xs")) {
   :root {
     --section-padding: var(--grid-gap-static-sm);
+  }
+  .links-wrapper {
+    a {
+      max-width: 70vw;
+    }
   }
 }

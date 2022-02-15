@@ -234,6 +234,90 @@ button, .link-button {
   }
 }
 
+.el-menu-item:focus {
+  background-color: transparent !important;
+}
+.navbar {
+  .toggle {
+    cursor: pointer;
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    left: 1.3rem;
+    position: absolute;
+    transition: .2s;
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    span {
+      background: var(--color-h);
+      border-radius: 1rem;
+      height: 2px;
+      position: absolute;
+      transform-origin: left center;
+      transition: .2s;
+      width: 100%;
+
+      &:first-child {
+        transform: translateY(-400%);
+      }
+      &:last-child {
+        transform: translateY(400%);
+      }
+    }
+
+    &.active {
+      span {
+        &:last-child, &:first-child {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}
+.navigation-drawer {
+  overflow-y: auto;
+  padding-top: calc(var(--header-height) + var(--grid-gap-static-md));
+  transform: translateX(calc(-100% - 10px));
+  transition: transform .3s ease-in-out;
+
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  .menu-item, .el-submenu__title {
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+    color: #ffffff;
+    font-family: var(--display-font-family);
+    font-size: var(--font-size-4);
+    font-weight: 700;
+
+    & .el-submenu__icon-arrow {
+      display: flex;
+      font-size: var(--font-size-4);
+    }
+
+    & .el-menu {
+      background: var(--dark);
+    }
+
+    &.is-active, &.is-active .el-submenu__title, & .is-active {
+      color: var(--primary) !important;
+    }
+
+    &:hover {
+      background: transparent !important;
+    }
+  }
+}
+
 .sub-item, .navbar .menu-item, .navbar .menu-item .el-submenu__title {
   display: flex;
   align-items: center;
@@ -342,6 +426,7 @@ a.link {
   font-size: var(--font-size-4);
   letter-spacing: 0;
   line-height: var(--header-line-height);
+  text-align: center;
 }
 .el-skeleton.is-animated .el-skeleton__item {
   background: var(--gradients);

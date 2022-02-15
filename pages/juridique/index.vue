@@ -23,11 +23,17 @@
 #juridique {
   gap: var(--grid-gap-static-md);
   margin-top: var(--grid-gap-static-md);
-  max-width: 1200px;
+  max-width: 900px;
+}
+
+@media (max-width: 748px) {
+  #juridique {
+    margin-top: var(--grid-gap-static-lg);
+  }
 }
 
 .links-wrapper {
-  max-width: 650px;
+  max-width: 800px;
   gap: var(--grid-gap-static-md);
 }
 </style>
