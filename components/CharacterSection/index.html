@@ -4,14 +4,16 @@
       <h3>{{ characterSection.title }}</h3>
       <p v-if="typeof characterSection.content === 'string'">{{ characterSection.content }}</p>
       <ul class="bullet-list" v-else>
-         <li v-for="(item, index) in characterSection.content" :key="index" v-html="renderText(item)"/>
+        <li v-for="(item, index) in characterSection.content" :key="index" v-html="renderText(item)"/>
       </ul>
     </div>
     <div class="character_column">
       <nuxt-img v-for="(image, index) in characterSection.media"
-           :key="index"
-           :src="image.url"
-           :alt="`character-${index}`" :class="`character-${index}`" format="webp" />
+                :key="index"
+                :src="image.url"
+                @load="showAfterLoad" class="opacity-disable"
+                :class="[`character-${index}`, {'opacity-enable': mediaLoaded}]"
+                :alt="`character-${index}`" format="webp"/>
     </div>
   </div>
 </section>

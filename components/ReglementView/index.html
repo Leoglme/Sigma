@@ -10,8 +10,16 @@
       </ul>
     </li>
   </ul>
-  <div class="reglement-media" v-if="reglement.media">
-    <nuxt-img
+  <div class="reglement-media w100" v-if="reglement.media">
+    <el-skeleton :loading="!mediaLoaded" animated>
+      <template slot="template">
+        <el-skeleton-item
+          variant="image"
+          style="height: 48vw;"
+        />
+      </template>
+    </el-skeleton>
+    <nuxt-img @load="showAfterLoad" :class="{'opacity-enable': mediaLoaded}" class="opacity-disable"
       format="webp" :src="reglement.media.url" :alt="reglement.media.label" v-if="reglement.media && reglement.media.type === 'image'" />
     <video :poster="reglement.media.poster" :src="reglement.media.url" v-if="reglement.media && reglement.media.type === 'video'"/>
   </div>

@@ -1,9 +1,10 @@
 import replace from "~/mixins/replace";
 import reglement from "~/data/reglement.json";
+import media from "~/mixins/media";
 
 export default {
   name: "ReglementView",
-  mixins: [replace],
+  mixins: [replace, media],
   props: {
     name: {type: String, default: null},
     parentTabName: {type: String, default: 'general'}

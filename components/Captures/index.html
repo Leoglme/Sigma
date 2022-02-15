@@ -5,12 +5,21 @@
 
   <template v-for="(row, index) in captureSection.media" v-if="(index + 1) <= captureSection.max">
     <div class="capture_row row-full" v-if="row.type === 'image'" style="max-height: 35rem">
-      <nuxt-img :src="row.url" :alt="`sigma gta rp picture ${index}`" :key="index" format="webp"/>
+      <nuxt-img
+        @load="showAfterLoad" class="opacity-disable"
+        :class="{'opacity-enable': mediaLoaded}"
+        :src="row.url"
+        :alt="`sigma gta rp picture ${index}`"
+        :key="index" format="webp"/>
     </div>
 
     <div class="capture_row" v-if="row.type !== 'image'" :class="row.type" :key="index">
-      <nuxt-img v-for="(image, imageIndex) in row.images" :key="imageIndex" format="webp"
-           :src="image.url" :alt="`sigma gta rp picture ${index}-${imageIndex}`"/>
+      <nuxt-img v-for="(image, imageIndex) in row.images"
+                :key="imageIndex" format="webp"
+                @load="showAfterLoad" class="opacity-disable"
+                :class="{'opacity-enable': mediaLoaded}"
+                :src="image.url"
+                :alt="`sigma gta rp picture ${index}-${imageIndex}`"/>
     </div>
   </template>
 </section>

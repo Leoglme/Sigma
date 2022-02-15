@@ -1,11 +1,17 @@
 <swiper class="swiper" ref="mySwiper" :options="swiperOption">
   <swiper-slide v-for="(slide, index) in homeSlides" :key="index">
-    <nuxt-img :src="slide.media.url" format="webp" :data-src="slide.media.url" class="swiper-lazy hide-text" :alt="slide.title + index" preload/>
+    <nuxt-img
+      @load="showAfterLoad"
+      :class="{'opacity-enable': mediaLoaded}"
+      :src="slide.media.url" format="webp"
+      :data-src="slide.media.url"
+      class="swiper-lazy hide-text opacity-disable"
+      :alt="slide.title + index" preload/>
     <div class="content" data-swiper-parallax="-360" v-if="!$fetchState.pending">
       <div class="content_container">
-        <h2 class="title" data-swiper-parallax="-100">{{ slide.title }}</h2>
+        <h1 class="title" data-swiper-parallax="-100">{{ slide.title }}</h1>
         <p class="subtitle" data-swiper-parallax="-240">{{ slide.content }}</p>
-        <button class="btn-outlined">{{ slide.button.text }}</button>
+        <button class="btn-outlined" @click="goto('info', 125)">{{ slide.button.text }}</button>
       </div>
     </div>
 

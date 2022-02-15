@@ -127,7 +127,7 @@ section {
   padding: var(--section-padding)
 }
 
-button {
+button, .link-button {
   color: #ffffff;
   cursor: pointer;
   border-radius: 4px;
@@ -346,4 +346,14 @@ a.link {
 .el-skeleton.is-animated .el-skeleton__item {
   background: var(--gradients);
   background-size: 400% 100%;
+}
+
+
+.opacity-disable {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.opacity-enable {
+  opacity: 1;
 }

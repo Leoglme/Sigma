@@ -67,8 +67,6 @@ export const meta = {
   ],
   link: [
     {hid: 'google:url', itemprop: 'url', href: website.url},
-
-    {hid: 'canonical', rel: 'canonical', href: website.url},
     {hid: 'alternate', rel: 'alternate', href: website.url, hreflang: website.lang},
 
     {hid: 'favicon', rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},

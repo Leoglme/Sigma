@@ -1,6 +1,8 @@
 import sections from "@/data/sections.json"
+import media from "~/mixins/media";
 export default {
   name: "CharacterSection",
+  mixins: [media],
   computed: {
     characterSection() {
       return sections.find(e => e.id === "characters");
