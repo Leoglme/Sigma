@@ -11,7 +11,7 @@ export default {
       currentTabs: 'criminel',
       parentTabName: "illegal",
       defaultTab: "criminel",
-      reglement: reglement.legal,
+      reglement: reglement.illegal,
       loaded: false,
       tabs: [
         {

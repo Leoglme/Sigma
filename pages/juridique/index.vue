@@ -1,6 +1,6 @@
 <template>
   <main style="max-width: 100vw; overflow-y: hidden">
-    <section id="juridique">
+    <section id="juridique" class="first-section">
       <h1 class="title">{{ juridique.title }}</h1>
       <div class="links-wrapper">
         <a class="link-button btn-outlined w100" v-for="(link, index) in juridique.links" :href="link.url" :key="index">
@@ -24,12 +24,6 @@
   gap: var(--grid-gap-static-md);
   margin-top: var(--grid-gap-static-md);
   max-width: 900px;
-}
-
-@media (max-width: 748px) {
-  #juridique {
-    margin-top: var(--grid-gap-static-lg);
-  }
 }
 
 .links-wrapper {

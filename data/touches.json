@@ -150,8 +150,13 @@
         "label": "Siffler",
         "keys": [
           "Shift",
-          "Z",
-          "Z"
+          "W"
+        ]
+      },
+      {
+        "label": "Ragdol",
+        "keys": [
+          "'"
         ]
       },
       {

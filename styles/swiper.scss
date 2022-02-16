@@ -10,6 +10,10 @@
   }
 }
 
+.swiper-button-next, .swiper-button-prev {
+  outline: none;
+}
+
 .swiper {
   overflow: unset;
   width: 100%
@@ -42,8 +46,8 @@
 
 @media (max-width: 767px) {
   .swiper-pagination-white .swiper-pagination-bullet {
-    height: 2px;
-    width: 1.5rem
+    height: 6px;
+    width: 5rem;
   }
 }
 

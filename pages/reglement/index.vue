@@ -1,5 +1,5 @@
 <template>
-  <section id="reglements">
+  <section id="reglements" class="first-section">
     <h1 class="title">{{ reglement.name }}</h1>
     <span class="reglement-description" v-html="description"/>
     <div class="buttons">

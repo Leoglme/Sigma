@@ -1,3 +1,4 @@
-RewriteCond %{HTTP_HOST} ^sigma-rp\.fr$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.sigma-rp\.fr$
-RewriteRule ^(.*)$ "https\:\/\/www\.sigma-rp\.fr\/" [R=301,L]
+RewriteEngine On
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://sigma-rp.fr%{REQUEST_URI} [R=301,L,NE]

@@ -1,10 +1,15 @@
 @import "fonts";
 @import "swiper";
 
+html {
+  box-sizing: border-box;
+}
+
 $primary: #A80400;
 
 * {
   cursor: inherit;
+  outline: none;
   margin: 0;
   padding: 0;
 }

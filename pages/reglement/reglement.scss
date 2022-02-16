@@ -6,7 +6,7 @@
   gap: var(--grid-gap-static-sm);
 }
 
-#reglements, #reglements-general {
+#reglements, #reglements-general, #reglements-legal, #reglements-illegal  {
   gap: var(--grid-gap-static-md);
   margin-top: var(--grid-gap-static-md);
   display: flex;

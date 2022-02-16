@@ -65,9 +65,17 @@
 
 @media (max-width: 1023px) {
   .capture_row.row-full {
+    position: relative;
+    min-height: 125px;
     --aspect-ratio: 16/9;
-    position: relative
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)));
   }
+  .capture_row.third-right img,
+  .capture_row.double img,
+  .capture_row.third-left img {
+     min-height: 200px;
+  }
+
   .capture_row.row-full:before {
     content: "";
     display: block;
