@@ -4,7 +4,7 @@ export default {
       if (!str) return null
       const find = '\n';
       const re = new RegExp(find, 'g');
-      return str.replace(re, '<br>');
+      return this.capitalizeFirstLetter(str).replace(re, '<br>');
     },
     capitalizeFirstLetter(string: string): string {
       return string.charAt(0).toUpperCase() + string.slice(1);

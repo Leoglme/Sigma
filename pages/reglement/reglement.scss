@@ -57,9 +57,11 @@
   li {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: var(--grid-gap-static-xs);
     margin: var(--grid-gap-static-md) 0;
+    text-transform: initial;
 
     &::before {
       content: "";
