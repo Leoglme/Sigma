@@ -1,5 +1,5 @@
 import Logo from "~/components/common/Logo/index.vue";
-import navs from '@/data/navs.json';
+import navs from '@/static/data/navs.json';
 import router from "~/mixins/router";
 
 interface Link {

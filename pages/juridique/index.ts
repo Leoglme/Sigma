@@ -1,4 +1,4 @@
-import juridique from '~/data/juridique.json'
+import juridique from '~/static/data/juridique.json'
 export default {
   name: "index",
   data(){

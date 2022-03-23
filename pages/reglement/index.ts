@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import reglement from "@/data/reglement.json"
+import reglement from "@/static/data/reglement.json"
 import replace from "~/mixins/replace";
 export default Vue.extend({
   name: "ReglementPage",

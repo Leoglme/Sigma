@@ -1,4 +1,4 @@
-import touches from "~/data/touches.json";
+import touches from "~/static/data/touches.json";
 export default {
   name: "Touches",
   data(){

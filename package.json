@@ -12,6 +12,7 @@
   "dependencies": {
     "core-js": "^3.19.3",
     "element-ui": "^2.15.6",
+    "moment": "^2.29.1",
     "nuxt": "^2.15.8",
     "swiper": "^5.3.7",
     "vue": "^2.6.14",

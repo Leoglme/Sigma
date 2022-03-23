@@ -1,5 +1,5 @@
 import {meta} from './data/meta'
-import website from './data/website.json';
+import website from './static/data/website.json';
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -29,7 +29,7 @@ export default {
   },
   'google-gtag': {
     id: website.GTAG_ID,
-    debug: true
+    debug: process.env.NODE_ENV !== 'production'
   },
 
   // Auto import components: https://go.nuxtjs.dev/config-components

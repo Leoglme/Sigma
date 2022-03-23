@@ -57,7 +57,6 @@
   li {
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
     justify-content: flex-start;
     gap: var(--grid-gap-static-xs);
     margin: var(--grid-gap-static-md) 0;
@@ -67,7 +66,7 @@
       content: "";
       position: relative;
       top: 10px;
-      width: 7px;
+      min-width: 7px;
       height: 7px;
       margin-right: var(--grid-gap-static-xs);
       background: var(--color-h);

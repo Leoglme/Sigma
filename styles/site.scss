@@ -1,5 +1,6 @@
 @import "fonts";
 @import "swiper";
+@import "social-media";
 
 html {
   box-sizing: border-box;
@@ -130,6 +131,10 @@ section {
   margin: auto;
   max-width: 2560px;
   padding: var(--section-padding)
+}
+
+a {
+  cursor: pointer;
 }
 
 button, .link-button {

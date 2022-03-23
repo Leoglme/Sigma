@@ -1,5 +1,5 @@
 import replace from "~/mixins/replace";
-import reglement from "~/data/reglement.json";
+import reglement from "~/static/data/reglement.json";
 import media from "~/mixins/media";
 
 export default {

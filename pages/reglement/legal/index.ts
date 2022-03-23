@@ -1,5 +1,5 @@
 import SkeletonTabs from "~/components/Skeleton/SkeletonTabs/index.vue";
-import reglement from "@/data/reglement.json"
+import reglement from "@/static/data/reglement.json"
 import replace from "~/mixins/replace";
 import router from "~/mixins/router";
 export default {

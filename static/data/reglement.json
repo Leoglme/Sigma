@@ -255,7 +255,7 @@
             "text": "Les agents corrompus sont autorisés avec un accord staff (vous devez nous transmettre un dossier). Suite à cet accord, il faudra jouer le plus fair play possible et éviter le plus possible le Win RP."
           },
           {
-            "text": "Il est interdit de tazer un citoyen sur une moto en mouvement."
+            "text": "Il est autorisé de tazer quelqu'un à moto dans la limite du raisonnable et si la personne ne cours aucun danger suite à ce taze"
           },
           {
             "text": "Il est interdit d'avoir un double job (sauf intérim)."
@@ -345,7 +345,10 @@
             "text": "Lors des braquages (supérettes, coiffeur, tatoueur etc..) vous devez attendre l'arrivée des forces de l'ordre pour pouvoir vous enfuir"
           },
           {
-            "text": "Les braquages doivent être obligatoirement réalisés avec des véhicules à 4 roues (motos interdites pour équilibrage illégal/LSPD, BCSO)"
+            "text": "Les braquages peuvent êtres réaliser en deux roues (sauf Bf400/Sanchez/Manchez pour équilibrage illégal/LSPD, BCSO)"
+          },
+          {
+            "text": "Il est interdit de vendre de la drogue à moto."
           },
           {
             "text": "Lors de scènes, vous avez le droit de forcer un EMS à soigner vos coéquipiers avant vos ennemis"
