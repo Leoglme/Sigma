@@ -21,7 +21,7 @@
         />
       </template>
     </el-skeleton>
-    <nuxt-img @load="showAfterLoad" :class="{'opacity-enable': mediaLoaded}" class="opacity-disable"
+    <nuxt-img @load="showAfterLoad" :class="{'opacity-enable': mediaLoaded}" width="1280" height="720" class="opacity-disable"
       format="webp" :src="reglement.media.url" :alt="reglement.media.label" v-if="reglement.media && reglement.media.type === 'image'" />
     <video :poster="reglement.media.poster" :src="reglement.media.url" v-if="reglement.media && reglement.media.type === 'video'"/>
   </div>

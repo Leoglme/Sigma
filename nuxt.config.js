@@ -13,7 +13,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/element-ui',
+    '@/plugins/element-ui.ts',
     '~/plugins/swiper.ts'
   ],
 
@@ -39,17 +39,50 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxt/image'
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
+    '@nuxt/image',
     '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag'
   ],
 
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+  ],
+
+  features: {
+    store: false,
+    middleware: true,
+    transitions: false,
+    deprecations: false,
+    validate: false,
+    asyncData: false,
+    fetch: true,
+    clientOnline: false,
+    clientPrefetch: false,
+    clientUseUrl: true,
+    componentAliases: false,
+    componentClientOnly: true
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [/^element-ui/],
-  }
+    analyze: true,
+    teaser: true,
+    indicator: false,
+    html:{
+      minify:{
+        collapseBooleanAttributes: true,
+        decodeEntities: true,
+        minifyCSS: true,
+        minifyJS: true,
+        processConditionalComments: true,
+        removeEmptyAttributes: true,
+        removeRedundantAttributes: true,
+        trimCustomFragments: true,
+        useShortDoctype: true,
+        minifyURLs: true,
+        removeComments: true,
+        removeEmptyElements: true
+      }
+    }
+  },
 }

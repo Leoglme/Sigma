@@ -10,7 +10,7 @@
         },
         "media": {
           "type": "image",
-          "url": "/slides/slide-1.jpg"
+          "url": "/slides/slide-1.webp"
         }
       },
       {
@@ -21,7 +21,7 @@
         },
         "media": {
           "type": "image",
-          "url": "/slides/slide-2.jpg"
+          "url": "/slides/slide-2.webp"
         }
       },
       {
@@ -32,7 +32,7 @@
         },
         "media": {
           "type": "image",
-          "url": "/slides/slide-3.jpg"
+          "url": "/slides/slide-3.webp"
         }
       }
     ]
@@ -64,15 +64,15 @@
     "media": [
       {
         "type": "image",
-        "url": "/images/character1.png"
+        "url": "/images/character1.webp"
       },
       {
         "type": "image",
-        "url": "/images/character2.jpg"
+        "url": "/images/character2.webp"
       },
       {
         "type": "image",
-        "url": "/images/character3.jpg"
+        "url": "/images/character3.webp"
       }
     ]
   },
@@ -83,18 +83,18 @@
     "media": [
       {
         "type": "image",
-        "url": "/images/gta5-reel-car.jpg"
+        "url": "/images/gta5-reel-car.webp"
       },
       {
         "type": "third-right",
         "images": [
           {
             "type": "image",
-            "url": "/images/gta5-character1.jpg"
+            "url": "/images/gta5-character1.webp"
           },
           {
             "type": "image",
-            "url": "/images/gta5-character2.jpg"
+            "url": "/images/gta5-character2.webp"
           }
         ]
       },
@@ -103,11 +103,11 @@
         "images": [
           {
             "type": "image",
-            "url": "/images/gta5-cops.jpg"
+            "url": "/images/gta5-cops.webp"
           },
           {
             "type": "image",
-            "url": "/images/gta5-dog.jpg"
+            "url": "/images/gta5-dog.webp"
           }
         ]
       }

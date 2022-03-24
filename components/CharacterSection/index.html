@@ -9,6 +9,7 @@
     </div>
     <div class="character_column">
       <nuxt-img v-for="(image, index) in characterSection.media"
+                width="300" height="560"
                 :key="index"
                 :src="image.url"
                 @load="showAfterLoad" class="opacity-disable"

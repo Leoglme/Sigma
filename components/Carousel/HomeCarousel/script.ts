@@ -1,12 +1,13 @@
 import sections from "@/static/data/sections.json"
 import media from "~/mixins/media";
 import scroll from "~/mixins/scroll";
+import resize from "~/mixins/resize";
 
 
 export default {
   name: "HomeCarousel",
   async fetch(){},
-  mixins: [media, scroll],
+  mixins: [media, scroll, resize],
   fetchOnServer: false,
   data() {
     return {
