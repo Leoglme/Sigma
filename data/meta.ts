@@ -88,11 +88,7 @@ export const meta = {
 
     {hid: 'mask-icon', rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg', color: website.colorPrimary},
     {hid: 'shortcut-icon', rel: 'shortcut icon', href: '/favicon/favicon-96x96.png'},
-    {hid: 'manifest', rel: 'manifest', href: '/favicon/manifest.json'},
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round'
-    }
+    {hid: 'manifest', rel: 'manifest', href: '/favicon/manifest.json'}
   ]
 }
 
