@@ -1,5 +1,5 @@
 <div class="rules-container">
-  <h3 class="reglement-sub-title" v-html="description" v-if="description"/>
+  <h2 class="reglement-sub-title" v-html="description" v-if="description"/>
   <span class="horizontal-separator" style="margin-top: 2rem;" v-if="description"/>
   <ul class="rules-list">
     <li v-for="(term, index) in reglement.terms" :key="index"
@@ -25,7 +25,7 @@
       format="webp" :src="reglement.media.url" :alt="reglement.media.label" v-if="reglement.media && reglement.media.type === 'image'" />
     <video :poster="reglement.media.poster" :src="reglement.media.url" v-if="reglement.media && reglement.media.type === 'video'"/>
   </div>
-  <nuxt-link to="/reglement">
+  <nuxt-link aria-label="Bouton retour vers les catégories de règlement" to="/reglement">
     <button class="btn btn-sm back_btn"><i class="el-icon-back bold"/> Règlements</button>
   </nuxt-link>
 </div>

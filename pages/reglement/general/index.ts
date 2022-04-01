@@ -2,9 +2,14 @@ import SkeletonTabs from "~/components/Skeleton/SkeletonTabs/index.vue";
 import reglement from "@/static/data/reglement.json"
 import replace from "~/mixins/replace";
 import router from "~/mixins/router";
+import {updateHead} from "~/data/update-head";
+const title = "Règlement général • Sigma RP"
+const description = "Voici le règlement général du server gta. Si un changement survient, il vous sera annoncé."
+const route = "/reglement/general"
 export default {
   name: "ReglementGeneralPage",
   mixins: [replace, router],
+  head: updateHead(title, description, route),
   components: {SkeletonTabs},
   data() {
     return {

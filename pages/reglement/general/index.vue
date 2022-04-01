@@ -9,7 +9,8 @@
       <client-only v-for="(tab, index) in tabs" :key="index">
         <el-tab-pane  :lazy="true" :label="tab.name" :name="tab.to">
           <template #label>
-            <NuxtLink class="center w100" :to="'/reglement/' + parentTabName + '/' + tab.to">
+            <NuxtLink :aria-label="`onglet règlement ${tab.name}`" class="center w100"
+                      :to="'/reglement/' + parentTabName + '/' + tab.to">
               {{tab.name}}
             </NuxtLink>
           </template>

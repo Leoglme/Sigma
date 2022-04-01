@@ -4,6 +4,7 @@
        <nuxt-link
          v-if="link.to && !link.to.toLowerCase().includes('http')"
          :title="link.name"
+         :aria-label="`Lien ${link.name}`"
          class="footer_links--item"
          :to="link.to">
          {{ link.name }}
@@ -28,7 +29,7 @@
 
   <section class="footer_infos">
     <div class="footer_logo--website">
-      <nuxt-link to="/" title="accueil">
+      <nuxt-link aria-label="Lien vers la page d'accueil" to="/" title="accueil">
         <LogoSmall width="2rem" height="2rem"/>
       </nuxt-link>
     </div>

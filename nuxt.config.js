@@ -40,6 +40,7 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxt/image',
+    '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag'
   ],

@@ -1,6 +1,6 @@
 <section id="captures" v-if="!$fetchState.pending">
   <div class="section-header">
-    <h3 class="section-title">{{ captureSection.title }}</h3>
+    <h2 class="section-title">{{ captureSection.title }}</h2>
   </div>
 
   <template v-for="(row, index) in captureSection.media" v-if="(index + 1) <= captureSection.max">

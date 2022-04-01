@@ -49,7 +49,7 @@
   grid-template-columns:repeat(var(--grid-num-columns, 1), minmax(0, 1fr))
 }
 
-.basic_section--container .text-container h3 {
+.basic_section--container .text-container h2 {
   text-transform: uppercase;
   color: #fff;
   font-family: var(--header-font-family);

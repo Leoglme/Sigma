@@ -1,7 +1,7 @@
 <section id="info">
   <div class="basic_section--container">
     <div class="text-container">
-      <h3>{{ characterSection.title }}</h3>
+      <h2>{{ characterSection.title }}</h2>
       <p v-if="typeof characterSection.content === 'string'">{{ characterSection.content }}</p>
       <ul class="bullet-list" v-else>
         <li v-for="(item, index) in characterSection.content" :key="index" v-html="renderText(item)"/>

@@ -41,7 +41,7 @@
       {
         "label": "Menu Armes",
         "keys": [
-          "Tab"
+          "inventaire"
         ]
       },
       {
@@ -140,13 +140,6 @@
         ]
       },
       {
-        "label": "Mettre un gifle",
-        "keys": [
-          "Shift",
-          "A"
-        ]
-      },
-      {
         "label": "Siffler",
         "keys": [
           "Shift",
@@ -156,14 +149,7 @@
       {
         "label": "Ragdol",
         "keys": [
-          "'"
-        ]
-      },
-      {
-        "label": "Plaquer",
-        "keys": [
-          "Shift",
-          "G"
+          "-"
         ]
       },
       {

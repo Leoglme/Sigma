@@ -3,13 +3,13 @@
     <h1 class="title">{{ reglement.name }}</h1>
     <span class="reglement-description" v-html="description"/>
     <div class="buttons">
-      <nuxt-link :append="true" to="general">
+      <nuxt-link aria-label="lien vers le règlement générales" :append="true" to="general">
         <button class="btn btn-sm">Règles générales <i class="el-icon-right bold"/></button>
       </nuxt-link>
-      <nuxt-link :append="true" to="legal">
-        <button class="btn btn-sm">Règles sur le Légal <i class="el-icon-right bold"/></button>
+      <nuxt-link aria-label="lien vers le règlement légal" :append="true" to="legal">
+        <button class="btn btn-sm">Règles sur le légal <i class="el-icon-right bold"/></button>
       </nuxt-link>
-      <nuxt-link :append="true" to="illegal">
+      <nuxt-link aria-label="lien vers le règlement illégal" :append="true" to="illegal">
         <button class="btn btn-sm">Règles sur l'illégal <i class="el-icon-right bold"/></button>
       </nuxt-link>
     </div>

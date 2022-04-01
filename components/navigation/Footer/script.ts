@@ -1,6 +1,5 @@
 import LogoSmall from "~/components/common/LogoSmall/index.vue";
 import footer_data from '~/static/data/navs.json';
-import moment from "moment/moment";
 import website from '~/static/data/website.json'
 
 export default  {
@@ -8,7 +7,7 @@ export default  {
   data(){
     return {
       links: footer_data.footer.links,
-      current_year: moment().format('YYYY'),
+      current_year: new Date().getFullYear(),
       website_name: website.name,
       website_author: {
         name: website.author,

@@ -6,12 +6,12 @@
         <span></span>
         <span></span>
       </div>
-      <el-menu-item id="logo" index="/" class="menu-item">
+      <el-menu-item aria-label="Logo du site et lien vers la page d'accueil" id="logo" index="/" class="menu-item">
         <Logo style="pointer-events: none"/>
       </el-menu-item>
       <template v-for="(link, index) in links">
         <el-menu-item class="menu-item menu_item--link" :key="index" :index="link.to" v-if="link.role === 'item'">
-          <nuxt-link :to="link.to">
+          <nuxt-link :to="link.to" :aria-label="`Lien vers la page ${link.name}`">
             {{ link.name }}
           </nuxt-link>
         </el-menu-item>
@@ -21,7 +21,7 @@
                         :key="subIndex" :index="subLink.to"
                         class="sub-item menu_item--link"
                         style="justify-content: flex-start">
-            <nuxt-link :to="subLink.to">
+            <nuxt-link :aria-label="`Lien vers la page ${subLink.name}`" :to="subLink.to">
               {{ subLink.name }}
             </nuxt-link>
           </el-menu-item>
@@ -34,7 +34,7 @@
       <el-menu-item class="menu-item menu_item--link"
                     :class="{'is-active': isActive(link.to)}"
                     :key="index" :index="link.to" v-if="link.role === 'item'">
-        <nuxt-link :to="link.to">
+        <nuxt-link :aria-label="`Lien vers la page ${link.name}`"  :to="link.to">
           {{ link.name }}
         </nuxt-link>
       </el-menu-item>
@@ -45,7 +45,7 @@
                       :class="{'is-active': isActiveSubMenu(subLink.to)}"
                       class="sub-item menu_item--link"
                       style="justify-content: flex-start">
-          <nuxt-link :to="subLink.to">
+          <nuxt-link :aria-label="`Lien vers la page ${subLink.name}`"  :to="subLink.to">
             {{ subLink.name }}
           </nuxt-link>
         </el-menu-item>

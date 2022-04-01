@@ -48,7 +48,7 @@ export const meta = {
     {hid: 'og:url', property: 'og:url', content: website.url},
     {hid: 'twitter:url', name: 'twitter:url', content: website.url},
 
-    {hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1'},
+    {hid: 'viewport', name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5'},
     {hid: 'content-language', name: 'content-language', content: website.lang},
 
 
