@@ -40,7 +40,6 @@ export default {
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
     '@nuxt/image',
-    '@nuxtjs/sitemap',
     '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag'
   ],
@@ -66,7 +65,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    analyze: true,
+    analyze: false,
     teaser: true,
     indicator: false,
     html:{

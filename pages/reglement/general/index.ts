@@ -5,7 +5,7 @@ import router from "~/mixins/router";
 import {updateHead} from "~/data/update-head";
 const title = "Règlement général • Sigma RP"
 const description = "Voici le règlement général du server gta. Si un changement survient, il vous sera annoncé."
-const route = "/reglement/general"
+const route = "/reglement/general/"
 export default {
   name: "ReglementGeneralPage",
   mixins: [replace, router],

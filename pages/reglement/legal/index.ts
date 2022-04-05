@@ -5,7 +5,7 @@ import router from "~/mixins/router";
 import {updateHead} from "~/data/update-head";
 const title = "Règlement légal • Sigma RP"
 const description = "Les règles concernant le monde du légal tel que les règles des civils, LSPD, BCSO, EMS et les entreprises sont amenées à évoluer. Si un changement survient, il vous sera annoncé."
-const route = "/reglement/legal"
+const route = "/reglement/legal/"
 
 export default {
   name: "ReglementLegalPage",

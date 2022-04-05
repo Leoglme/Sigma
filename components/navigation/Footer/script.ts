@@ -7,7 +7,6 @@ export default  {
   data(){
     return {
       links: footer_data.footer.links,
-      current_year: new Date().getFullYear(),
       website_name: website.name,
       website_author: {
         name: website.author,

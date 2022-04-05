@@ -440,10 +440,11 @@ a.link {
 
 
 .opacity-disable {
-  opacity: 0;
-  transition: opacity 1s;
+  opacity: 1;
+  animation: fadeIn 1s;
 }
 
 .opacity-enable {
   opacity: 1;
 }
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}

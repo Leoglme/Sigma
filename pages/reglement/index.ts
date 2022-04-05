@@ -3,7 +3,7 @@ import replace from "~/mixins/replace";
 import {updateHead} from "~/data/update-head";
 const title = "Catégories règlement • Sigma RP"
 const description = "Voici les différentes catégories qu'aborde le règlement de notre server."
-const route = "/reglement"
+const route = "/reglement/"
 
 export default {
   name: "ReglementPage",
