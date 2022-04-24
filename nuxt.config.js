@@ -7,14 +7,7 @@ export default {
   target: 'static',
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'element-ui/lib/theme-chalk/index.css',
     '@/styles/site.scss'
-  ],
-
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '@/plugins/element-ui.ts',
-    '~/plugins/swiper.ts'
   ],
 
   publicRuntimeConfig: {
@@ -25,7 +18,7 @@ export default {
 
   googleAnalytics: {
     id: website.GA_ID,
-    proxyHeaders: false,
+    proxyHeaders: false
   },
   'google-gtag': {
     id: website.GTAG_ID,
@@ -39,7 +32,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxt/image',
     '@nuxtjs/google-analytics',
     '@nuxtjs/google-gtag'
   ],
@@ -84,5 +76,5 @@ export default {
         removeEmptyElements: true
       }
     }
-  },
+  }
 }
